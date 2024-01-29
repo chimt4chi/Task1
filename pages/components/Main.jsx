@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import Draggable from "react-draggable";
 import DataItem from "./DataItem";
 import ImgModal from "./ImgModal";
-import { DataProvider } from "../../lib/DataContext.page";
+import { DataProvider } from "../../lib/DataContext";
 
 function Main() {
   const [data, setData] = useState([]);
