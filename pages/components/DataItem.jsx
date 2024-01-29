@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useData } from "../../lib/DataContext";
+import { useData } from "../../lib/DataContext.page";
 
 function DataItem({ data }) {
   // console.log(data.text);

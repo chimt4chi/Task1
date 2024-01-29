@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useData } from "../../lib/DataContext";
+import { useData } from "../../lib/DataContext.page";
 
 function Modal({ isOpen, onClose, onSubmit }) {
   const [textInput, setTextInput] = useState("");
