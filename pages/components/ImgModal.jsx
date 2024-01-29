@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useData } from "../context/TodoContext";
 import Image from "next/image";
 
 function ImgModal({ isOpen, onClose }) {
@@ -80,7 +79,8 @@ function ImgModal({ isOpen, onClose }) {
           />
           {selectedImage && (
             <Image
-              height="auto"
+              height={100}
+              width={100}
               src={selectedImage}
               alt="Selected"
               className="mt-2"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useData } from "../context/TodoContext";
+import { useData } from "../../lib/DataContext";
 
 function Modal({ isOpen, onClose, onSubmit }) {
   const [textInput, setTextInput] = useState("");
@@ -51,7 +51,7 @@ function Modal({ isOpen, onClose, onSubmit }) {
         </span>
         <form onSubmit={handleSubmit}>
           <input
-            className="rounded-md h-10"
+            className="rounded-md h-10 text-black"
             type="text"
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}

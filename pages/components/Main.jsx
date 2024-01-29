@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import Draggable from "react-draggable";
-import { DataProvider } from "../context/TodoContext";
 import DataItem from "./DataItem";
 import ImgModal from "./ImgModal";
+import { DataProvider } from "../../lib/DataContext";
 
 function Main() {
   const [data, setData] = useState([]);
