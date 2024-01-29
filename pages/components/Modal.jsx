@@ -9,6 +9,7 @@ function Modal({ isOpen, onClose, onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!textInput) return;
     addText({ text: textInput });
     setTextInput("");
     onClose();
